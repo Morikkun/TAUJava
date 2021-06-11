@@ -3,15 +3,20 @@ package br.com.tau;
 import br.com.browser.BrowserGetter;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.openqa.selenium.WebDriver;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 
+//comment
 
+/**
+ * Javadoc
+ */
 
+//todo
 @TestInstance(PER_CLASS)
 public class SeleniumTest {
     private BrowserGetter browserGetter = new BrowserGetter();
@@ -19,7 +24,7 @@ public class SeleniumTest {
 
     @BeforeAll
     public void beforeAll() {
-        driver = browserGetter.getDriver();
+        driver = browserGetter.getChromeDriver();
     }
 
     @AfterAll
